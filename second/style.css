@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+header {
+    background: linear-gradient(#dcd978,#f766a2);
+    color: rgb(0, 0, 0);
+    height: 110px;
+    width: 100%;
+}
+
+.topnav {
+    position: inherit;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.logo {
+    float:left;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.topnav li {
+    display: inline;
+    padding-right: 100px;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    position: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.format {
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+table, td, tr{
+    table-layout: auto;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(2n) {
+    background: #def8ff;
+}
+tr:nth-child(2n - 1) {
+    background: #ccffac;
+}
+
+.foot {
+    
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    padding-top: 50px;
+    background-color: rgb(255, 220, 166);
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.unorderedlist {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.unorderedlist li {
+    list-style-position: outside;
+    text-align: -webkit-match-parent;
+}
