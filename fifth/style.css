@@ -106,7 +106,7 @@ tr:nth-child(2n - 1) {
 
 #list-wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: flex-end;
     align-items: center;
 }
@@ -116,10 +116,10 @@ tr:nth-child(2n - 1) {
     flex-direction: column-reverse;
 }
 
-/* @media screen and (min-width:800px) {
+@media screen and (min-width:800px) {
     #main-wrap {
         align-items: flex-start;
 
     }
     
-} */
+}
