@@ -13,25 +13,37 @@ header {
     text-align: left;
 }
 
-.topnav {
-    
-    position: inherit;
-    text-align: right;
-    padding-top: 10px;
-    order: 3;
-}
-
 .logo {
     float:left;
     margin: 5px;
     width: 100px;
     height: 100px;
+    padding-right: 70px;
     order: 1;
 }
 
+.topnav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    order: 3;
+}
+
 .topnav li {
-    display:inline-flex;
-    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#main-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 a {
@@ -40,19 +52,37 @@ a {
 
 h1 {
     display: flex;
+    float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin-right: 10px;
     order: 2;
 }
 
-table, td, tr{
+table {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    table-layout: auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: fit-content;
+    order: -2;
+}
+
+td, tr {
     table-layout: auto;
     text-align: center;
     border-collapse: collapse;
     border: 2px solid black;
-    margin-left: auto;
     margin-right: auto;
+}
+
+.format {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
 tr:nth-child(2n) {
@@ -74,30 +104,15 @@ tr:nth-child(2n - 1) {
 }
 
 .unorderedlist {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-
+    order: -1;
 }
 
 .unorderedlist li {
     list-style-position: outside;
     text-align: -webkit-match-parent;
-}
-
-#main-wrap {
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-}
-
-.topnav {
-    align-items: center;
-    flex-direction: column;
-    display: flex;
 }
 
 #menu-wrap {
@@ -106,20 +121,29 @@ tr:nth-child(2n - 1) {
 
 #list-wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-self: flex-end;
     align-items: center;
 }
 
-.tg {
-    display: flex;
-    flex-direction: column-reverse;
+a {
+    text-decoration: none;
 }
 
-/* @media screen and (min-width:800px) {
+@media screen and (min-width:600px) {
     #main-wrap {
-        align-items: flex-start;
-
+        justify-content: space-between;
     }
-    
-} */
+    #list-wrap {
+        flex-direction: row;
+        
+    }
+
+    .unorderedlist {
+        order: 0;
+    }
+
+    table {
+        order: 0;
+    }
+}
