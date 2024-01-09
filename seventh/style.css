@@ -1,125 +1,23 @@
+.slick-slide img {
+    border: 5px solid #fff;
+    display: flex;
+    width: 50%;
+}
+
+.image {
+    width: 800px;
+    height: 100%;
+}
+
+.container-box {
+    padding: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 1800px;
+    border-radius: 10px;
+    background-color: #000000a8;
+}
+
 body {
-    margin: 0px;
-    padding-left: 0px;
-}
-
-header {
-    display: flex;
-    background: linear-gradient(#dcd978,#f766a2);
-    color: rgb(0, 0, 0);
-    height: fit-content;
-    width: 100%;
-    text-align: center;
-    text-align: left;
-}
-
-.topnav {
-    
-    position: inherit;
-    text-align: right;
-    padding-top: 10px;
-    order: 3;
-}
-
-.logo {
-    float:left;
-    margin: 5px;
-    width: 100px;
-    height: 100px;
-    order: 1;
-}
-
-.topnav li {
-    display:inline-flex;
-    padding-right: 100px;
-}
-
-a {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    margin-right: 10px;
-    order: 2;
-}
-
-table, td, tr{
-    table-layout: auto;
-    text-align: center;
-    border-collapse: collapse;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-tr:nth-child(2n) {
-    background: #def8ff;
-}
-tr:nth-child(2n - 1) {
-    background: #ccffac;
-}
-
-.foot {
-    
-    height: 100px;
-    width: 100%;
-    text-align: left;
-    padding-top: 50px;
-    background-color: rgb(255, 220, 166);
-    padding-left: 10px;
-    margin-top: 10px;
-}
-
-.unorderedlist {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.unorderedlist li {
-    list-style-position: outside;
-    text-align: -webkit-match-parent;
-}
-
-#main-wrap {
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-}
-
-.topnav {
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-}
-
-#menu-wrap {
-    flex-direction: column;
-}
-
-#list-wrap {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    align-items: center;
-}
-
-.tg {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-@media screen and (min-width:800px) {
-    #main-wrap {
-        align-items: flex-start;
-
-    }
-    
+    background-color: black;
 }
