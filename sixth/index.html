@@ -1,174 +1,27 @@
 <!DOCTYPE html>
-
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
-    <title>Лабораторная работа №1</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="tg">
-        <header id="main-wrap">
-            <h1>Мой сайт</h1>
-                <img class="logo" src="Logo.png" alt="Logo">
-                <nav class="topnav">
-                    <ul id="list-wrap">
-                        <li>
-                            <a href="#orderedlist">Нумерованный список</a>
-                        </li>
-                        <li>
-                            <a href="#linklist">Список ссылок</a>
-                        </li>
-                        <li>
-                            <a href="#table">Расписание</a>
-                        </li>
-                    </ul>
+    <p>Кровля</p>
+    <select name="product-choice" onclick="change()">
+        <option value="1">черепица</option>
+        <option value="2">металл</option>
+        <option value="3">экопокрытие</option>
+    </select>
 
-                </nav>
-        </header>
+    <div id="option-choices"></div>
+    
+    <p>введите количество
+    <input id="amount-of-products" type="number" min="1" max="10" value="1"></p>
+
+    <input type="button" value="рассчитать" onclick="getSum()">
+    <div id="result">
     </div>
-    <div>
-        <ul id="linklist" class="unorderedlist">
-            <li><a href="http://kubsu.ru">KubSU</a></li>
-            <li><a href="https://www.kubsu.ru/">https kubsu</a></li>
-            <li><a href="http://kubsu.ru"><img src="image.jpg" width="300" alt="image.jpg"></a></li>
-            <li><a href="/about_kubsu">сокращенная ссылка на внутреннюю страницу</a></li>
-            <li><a href="/main">сокращенная ссылка на главную</a></li>
-            <li><a href="#about_us">О нас</a></li>
-            <li><a href="#orderedlist">Ссылка на фрагмент текущей страницы</a></li>
-            <li><a href="http://kubsu.ru/page?parameter1=val1&parameter2=val2&parameter3=val3">Ссылка с тремя параметрами URL</a></li>
-            <li><a href="https://randomsite.com/human?id=00000000">Ссылка с параметром id</a></li>
-            <li><a href="example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-            <li><a href="about/example.html">Относительная ссылка на страницу в каталоге about</a></li>
-            <li><a href="../example.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-            <li><a href="../../example.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
-            <li>
-                <p>Контекстная <a href="https://www.kubsu.ru/">ссылка</a> в тексте абзаца</p>
-            </li>
-            <li><a href="https://www.kubsu.ru/index.php/#section-footer">Ссылка на фрагмент страницы стороннего сайта</a></li>
-            <li>
-                Ссылки из прямоугольной и круглой областей(слева вверху и справа внизу)
-                <br>
-                <img src="Banana.jpg" width="300" height="300" usemap="#new_map" alt="Banana.jpg">
-                <map name="new_map">
-                    <area shape="rect" coords="0,0,100,150" href="https://wikipedia.org" title="Википедия" alt="rectangle">
-                    <area shape="circle" coords="300,300,100" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="suspicious link" alt="circle">
-                </map>
-            </li>
-            <li><a href="/">Ссылка с пустым href</a></li>
-            <li><a>Ссылка без href</a></li>
-            <li><a href="https://random.org/" rel="nofollow">Ссылка по которой запрещен переход поисковикам</a></li>
-            <li><a id="robots" href="https://randomsite.com">Ссылка запрещенная для индексации поисковиками</a></li>
-            <li><a href="ftp://login:password@email.ru/root/index.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
-        </ul>
-        <p id="orderedlist">Нумерованный список ссылок с подписями title</p>
-        <ol>
-            <li><a href="https://wikipedia.org/" title="Википедия">wikipedia.org</a></li>
-            <li><a href="https://htmlbook.ru/" title="Справочник по HTML">htmlbook.ru</a></li>
-            <li><a href="https://www.youtube.com/" title="Youtube">youtube.com</a></li>
-        </ol>
-        
-        <table class="numtable">
-            <caption id="table">Расписание пар</caption>
-            <tr>
-                <td>группа</td>
-                <td>25/1</td>
-                <td>25/2</td>
-                <td>24</td>
-            </tr>
-            <tr>
-              <td>1-я пара</td> 
-              <td>ООП</td>
-              <td>Матанализ</td>
-              <td>Сети</td>
-            </tr>
-            <tr>
-                <td>2-я пара</td>
-                <td colspan="3">WEB разработка лекция</td>
-            </tr>
-            <tr>
-                <td>3-я пара</td>
-                <td>Диф.уравнения</td>
-                <td>Сети</td>
-                <td>Матанализ</td>
-            </tr>
-            <tr>
-                <td>4-я пара</td>
-                <td>Сети</td>
-                <td>ООП</td>
-                <td>Англ. язык</td>
-            </tr>
-            <tr>
-                <td>5-я пара</td>
-                <td rowspan="2">WEB разработка</td>
-                <td colspan="2">физ-ра</td>
-            </tr>
-            <tr>
-                <td>6-я пара</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
 
-        <p>Заполните форму:</p>
-        <form class="myform" action="https://exampleform.com/" method="POST">
-            <label>
-                Текстовое поле ФИО: <br>
-                <input name="field-fullname" placeholder="ФИО" value="">
-            </label><br>
-
-            <label>
-                Телефонный номер:<br>
-                <input name="field-tel" placeholder="+0(987)-654-32-10" value="">
-            </label><br>
-
-            <label>
-                Электронная почта:<br>
-                <input name="field-email" placeholder="example@email.com" value="">
-            </label><br>
-
-            <label>
-                Дата:<br>
-                <input name="field-date" placeholder="ДД.ММ.ГГ" value="">
-            </label><br>
-            
-            Пол:<br>
-                <label><input type="radio" id="choice1" name="choice" value="М">Мужской</label>
-                <label><input type="radio" id="choice2" name="choice" value="М">Женский</label><br>
-            
-            <label>
-                Любимый язык программирования:<br>
-                <select name="field-language[]" multiple="multiple">
-                    <option value="1">C++</option>
-                    <option value="2">C#</option>
-                    <option value="3">Java</option>
-                    <option value="4">JavaScript</option>
-                    <option value="5">Python</option>
-                    <option value="6">SWIFT</option>
-                    <option value="7">Ruby</option>
-                </select>
-            </label>
-
-            <label>
-                Биография:<br>
-                <textarea name="field-biography" rows="20" cols="40"></textarea>
-            </label><br>
-
-            С контрактом ознакомлен(а)
-            <label>
-                <input type="checkbox" name="field-checkbox">
-            </label><br>
-
-            <input type="submit" name="button-submit" value="Сохранить">
-        </form>
-    </div>
-        <footer class="foot">
-            © Суравикин Фёдор
-        </footer>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
